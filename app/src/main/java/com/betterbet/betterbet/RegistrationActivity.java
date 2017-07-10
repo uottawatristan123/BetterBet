@@ -30,7 +30,6 @@ public class RegistrationActivity extends AppCompatActivity {
         setTextInputLayoutErrorEnabled(false);
         setCancelButtonListneners();
         setCreateAccountButtonListeners();
-        setTextInputLayoutsTextChangedListeners();
 
     }
 
@@ -62,27 +61,16 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void setCreateAccountButtonListeners() {
-        Button createAccountBtn = (Button) findViewById(R.id.createAccountBtn);
-        createAccountBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent MainIntent = new Intent(RegistrationActivity.this, MainActivity.class);
-                startActivity(MainIntent);
-            }
-        });
-    }
-
-    private void setTextInputLayoutsTextChangedListeners() {
         //username
-        TextInputEditText usernameEdit = (TextInputEditText) findViewById(R.id.usernameEdit);
+        final TextInputEditText usernameEdit = (TextInputEditText) findViewById(R.id.usernameEdit);
         final TextInputLayout username = (TextInputLayout) findViewById(R.id.username);
         usernameEdit.addTextChangedListener(new TextWatcher() {
-           //Do not delete causes error (required)
+            //Do not delete causes error (required)
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
-           //Do not delete causes error (required)
+            //Do not delete causes error (required)
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
@@ -97,7 +85,7 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
         //First Name
-        TextInputEditText firstNameEdit = (TextInputEditText) findViewById(R.id.firstNameEdit);
+        final TextInputEditText firstNameEdit = (TextInputEditText) findViewById(R.id.firstNameEdit);
         final TextInputLayout firstName = (TextInputLayout) findViewById(R.id.firstName);
         firstNameEdit.addTextChangedListener(new TextWatcher() {
             //Do not delete causes error (required)
@@ -120,7 +108,7 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
         //Last Name
-        TextInputEditText lastNameEdit = (TextInputEditText) findViewById(R.id.lastNameEdit);
+        final TextInputEditText lastNameEdit = (TextInputEditText) findViewById(R.id.lastNameEdit);
         final TextInputLayout lastName = (TextInputLayout) findViewById(R.id.lastName);
         lastNameEdit.addTextChangedListener(new TextWatcher() {
             //Do not delete causes error (required)
@@ -142,31 +130,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 }
             }
         });
-        //Phone Number
-        TextInputEditText phoneNumberEdit = (TextInputEditText) findViewById(R.id.phoneNumberEdit);
-        final TextInputLayout phoneNumber = (TextInputLayout) findViewById(R.id.phoneNumber);
-        lastNameEdit.addTextChangedListener(new TextWatcher() {
-            //Do not delete causes error (required)
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-            //Do not delete causes error (required)
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(s.toString().isEmpty()) {
-                    phoneNumber.setError("Phone Number is required");
-                }  else {
-                    phoneNumber.setError(null);
-                }
-            }
-        });
         //Email
-        TextInputEditText emailEdit = (TextInputEditText) findViewById(R.id.emailEdit);
+        final TextInputEditText emailEdit = (TextInputEditText) findViewById(R.id.emailEdit);
         final TextInputLayout email = (TextInputLayout) findViewById(R.id.email);
         emailEdit.addTextChangedListener(new TextWatcher() {
             //Do not delete causes error (required)
@@ -193,7 +158,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
 
         //PhoneNumber
-        TextInputEditText phoneEdit = (TextInputEditText) findViewById(R.id.phoneNumberEdit);
+        final TextInputEditText phoneEdit = (TextInputEditText) findViewById(R.id.phoneNumberEdit);
         final TextInputLayout phone = (TextInputLayout) findViewById(R.id.phoneNumber);
         phoneEdit.addTextChangedListener(new TextWatcher() {
             //Do not delete causes error (required)
@@ -219,7 +184,7 @@ public class RegistrationActivity extends AppCompatActivity {
         });
 
         //password
-        TextInputEditText passwordEdit = (TextInputEditText) findViewById(R.id.passwordEdit);
+        final TextInputEditText passwordEdit = (TextInputEditText) findViewById(R.id.passwordEdit);
         final TextInputLayout password = (TextInputLayout) findViewById(R.id.password);
         passwordEdit.addTextChangedListener(new TextWatcher() {
             //Do not delete causes error (required)
@@ -243,7 +208,7 @@ public class RegistrationActivity extends AppCompatActivity {
         });
 
         //Confirm password
-        TextInputEditText cPasswordEdit = (TextInputEditText) findViewById(R.id.confirmPasswordEdit);
+        final TextInputEditText cPasswordEdit = (TextInputEditText) findViewById(R.id.confirmPasswordEdit);
         final TextInputLayout cPassword = (TextInputLayout) findViewById(R.id.confirmPassword);
         cPasswordEdit.addTextChangedListener(new TextWatcher() {
             //Do not delete causes error (required)
@@ -262,6 +227,55 @@ public class RegistrationActivity extends AppCompatActivity {
                     cPassword.setError("Confirm Password is required");
                 } else {
                     cPassword.setError(null);
+                }
+            }
+        });
+
+        //CreateAccountButton
+        Button createAccountBtn = (Button) findViewById(R.id.createAccountBtn);
+        createAccountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(usernameEdit.getText().toString().isEmpty())
+                {
+                    username.setError("Username is required");
+                }
+
+                if(firstNameEdit.getText().toString().isEmpty())
+                {
+                    firstName.setError("First Name is required");
+                }
+                if(lastNameEdit.getText().toString().isEmpty())
+                {
+                    lastName.setError("Last Name is required");
+                }
+                if(emailEdit.getText().toString().isEmpty())
+                {
+                    email.setError("Email is required");
+                } else if(!isValidEmail(emailEdit.getText().toString()))
+                {
+                    phone.setError("Invalid Email Format");
+                }
+                if(phoneEdit.getText().toString().isEmpty())
+                {
+                    phone.setError("Phone number is required");
+                } else if(!isValidPhoneNumber(phoneEdit.getText().toString()))
+                {
+                    phone.setError("Invalid Phone Number Format");
+                }
+                if(passwordEdit.getText().toString().isEmpty())
+                {
+                    password.setError("Password is required");
+                }
+                if(cPasswordEdit.getText().toString().isEmpty())
+                {
+                    cPassword.setError("Confirm Password is required");
+                }
+
+                if(username.getError()==null && firstName.getError()== null && lastName.getError()==null && email.getError()==null
+                        && phone.getError()==null && password.getError()==null && cPassword.getError()==null) {
+                    Intent MainIntent = new Intent(RegistrationActivity.this, MainActivity.class);
+                    startActivity(MainIntent);
                 }
             }
         });
