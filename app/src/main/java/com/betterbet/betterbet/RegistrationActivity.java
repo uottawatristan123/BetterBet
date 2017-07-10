@@ -23,10 +23,8 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+   //     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTextInputLayoutErrorEnabled(false);
         setCancelButtonListneners();
         setCreateAccountButtonListeners();
@@ -254,7 +252,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     email.setError("Email is required");
                 } else if(!isValidEmail(emailEdit.getText().toString()))
                 {
-                    phone.setError("Invalid Email Format");
+                    email.setError("Invalid Email Format");
                 }
                 if(phoneEdit.getText().toString().isEmpty())
                 {
