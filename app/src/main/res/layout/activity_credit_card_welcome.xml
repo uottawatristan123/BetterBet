@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.betterbet.betterbet.CreditCardWelcomeActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.betterbet.betterbet.CreditCardWelcomeActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,11 +26,11 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
             <com.braintreepayments.cardform.view.SupportedCardTypesView
-        android:id="@+id/supported_card_types"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="20dp" />
+                android:id="@+id/supported_card_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp" />
 
 
             <com.braintreepayments.cardform.view.CardForm
@@ -42,6 +44,13 @@
                 android:layout_height="wrap_content"
                 android:text="Billing Information"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/billingInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your billing information must match what your financial institution has on file or your order will not be processed."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
                 android:id="@+id/firstname"

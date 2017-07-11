@@ -16,7 +16,13 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
@@ -24,17 +30,14 @@
         <activity android:name=".GamesList" />
         <activity
             android:name=".RegistrationActivity"
+            android:label="CREATE ACCOUNT"
             android:parentActivityName=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.betterbet.betterbet.LoginActivity" />
         </activity>
         <activity android:name=".CreditCardWelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".WelcomeActivity"></activity>
     </application>
