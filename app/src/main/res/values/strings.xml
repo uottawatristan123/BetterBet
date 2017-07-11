@@ -21,8 +21,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_registration">RegistrationActivity</string>
 
-    <string name="country_prompt">Choose a country</string>
-    <string name="province_prompt">Choose a province</string>
+    <string name="country_prompt">Choose a Country</string>
+    <string name="province_prompt">Choose a Province</string>
     <string-array name="country_arrays">
         <item>Canada</item>
         <item>United States</item>
