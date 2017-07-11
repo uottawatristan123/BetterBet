@@ -272,8 +272,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 if(username.getError()==null && firstName.getError()== null && lastName.getError()==null && email.getError()==null
                         && phone.getError()==null && password.getError()==null && cPassword.getError()==null) {
-                    Intent MainIntent = new Intent(RegistrationActivity.this, MainActivity.class);
-                    startActivity(MainIntent);
+                    Intent WelcomeIntent = new Intent(RegistrationActivity.this, WelcomeActivity.class);
+                    startActivity(WelcomeIntent);
                 }
             }
         });

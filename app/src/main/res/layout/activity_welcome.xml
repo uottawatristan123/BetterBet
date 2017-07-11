@@ -38,11 +38,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:text="TextView"
+        android:text="Better Bet requires a credit card and billing information to place bets and collect winnings!"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        tools:text="Better Bet requires a credit card and billing information to place bets and collect winnings!" />
+        android:textSize="18sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
