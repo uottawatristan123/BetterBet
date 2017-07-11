@@ -20,6 +20,9 @@ public class CreditCardWelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_card_welcome);
 
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close_white_24dp);
+
+
         mSupportedCardTypesView = (SupportedCardTypesView) findViewById(R.id.supported_card_types);
         mSupportedCardTypesView.setSupportedCardTypes(SUPPORTED_CARD_TYPES);
 

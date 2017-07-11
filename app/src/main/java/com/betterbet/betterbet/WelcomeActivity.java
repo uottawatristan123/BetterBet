@@ -22,8 +22,8 @@ public class WelcomeActivity extends AppCompatActivity {
         createAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent WelcomeIntent = new Intent(WelcomeActivity.this, CreditCardWelcomeActivity.class);
-                startActivity(WelcomeIntent);
+                Intent CreditCardWelcomeIntent = new Intent(WelcomeActivity.this, CreditCardWelcomeActivity.class);
+                startActivity(CreditCardWelcomeIntent);
             }
         });
 

@@ -20,4 +20,24 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_registration">RegistrationActivity</string>
+
+    <string name="country_prompt">Choose a country</string>
+    <string name="province_prompt">Choose a province</string>
+    <string-array name="country_arrays">
+        <item>Canada</item>
+        <item>United States</item>
+        <item>United Kingdom</item>
+    </string-array>
+    <string-array name="province_arrays">
+        <item>Ontario</item>
+        <item>Quebec</item>
+        <item>British Columbia</item>
+        <item>Alberta</item>
+        <item>Manitoba</item>
+        <item>Saskatchewan</item>
+        <item>Nova Scotia</item>
+        <item>New Brunswick</item>
+        <item>Newfoundland and Labrador</item>
+        <item>Prince Edward Island</item>
+    </string-array>
 </resources>

@@ -36,8 +36,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.betterbet.betterbet.LoginActivity" />
         </activity>
-        <activity android:name=".CreditCardWelcomeActivity">
-
+        <activity android:name=".CreditCardWelcomeActivity"
+            android:label="PAYMENT INFORMATION"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.betterbet.betterbet.MainActivity" />
         </activity>
         <activity android:name=".WelcomeActivity"></activity>
     </application>
