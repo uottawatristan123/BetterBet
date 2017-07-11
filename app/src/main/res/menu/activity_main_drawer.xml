@@ -3,34 +3,45 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_games"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Games" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_mybets"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="My Bets" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:title="Statistics" />
+        <item
+            android:id="@+id/nav_collect"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Collect Winnings" />
     </group>
 
-    <item android:title="Communicate">
+
+    <item android:title="Additional">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_myaccount"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="My Account" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact_mail_black_24dp"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Logout" />
         </menu>
     </item>
+
+
 
 </menu>
