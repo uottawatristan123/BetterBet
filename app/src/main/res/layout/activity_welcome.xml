@@ -15,11 +15,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
-        android:text="Welcome to Better Bet!"
+        android:layout_marginTop="120dp"
+        android:text="Welcome to                        Better Bet!"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="30sp" />
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -48,11 +48,11 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/addCreditCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             android:elevation="0dp"
             android:paddingLeft="50dp"
             android:paddingRight="50dp"
@@ -61,7 +61,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/notNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Not Now"
