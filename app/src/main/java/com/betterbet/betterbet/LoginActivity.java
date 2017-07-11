@@ -150,7 +150,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(email_login.getError()==null && password_login.getError()==null) {
                     String UserName = mUserName.getText().toString();
                     String Pwd = mPasswordView.getText().toString();
-                    if(UserName.equalsIgnoreCase("Suraj@gmail.com") && Pwd.equals("Suraj@123")){
+                    if(UserName.equalsIgnoreCase("abc@gmail.com") && Pwd.equals("abc")){
                         Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(MainIntent);
                     }else
