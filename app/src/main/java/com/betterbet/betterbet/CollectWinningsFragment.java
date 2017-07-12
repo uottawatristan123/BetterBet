@@ -50,7 +50,7 @@ public class CollectWinningsFragment extends Fragment {
                 Context context = getContext();
                 AlertDialog dialog = new AlertDialog.Builder(context).create();
                 dialog.setTitle("Collect your winnings");
-                dialog.setMessage("Are you sure you want to collect your winnings?");
+                dialog.setMessage("Are you sure you want to collect your winnings? This will withdraw all credit from your account");
                 dialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
