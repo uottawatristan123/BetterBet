@@ -22,6 +22,7 @@
                 android:id="@+id/creditCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="20dp"
                 android:text="Credit Card"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -38,10 +39,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+
             <TextView
                 android:id="@+id/billingInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="20dp"
                 android:text="Billing Information"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -49,25 +52,43 @@
                 android:id="@+id/billingInfo2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="5dp"
                 android:text="Your billing information must match what your financial institution has on file or your order will not be processed."
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-            <EditText
-                android:id="@+id/firstname"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/firstName_tl"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="First Name"
-                android:inputType="textPersonName" />
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/lastname"
+                <EditText
+                    android:id="@+id/firstname_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:paddingTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lastname_tl"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Last Name"
-                android:inputType="textPersonName" />
+                android:layout_height="wrap_content">
 
+                <EditText
+                    android:id="@+id/lastname_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/aptsuite_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/aptsuite"
                 android:layout_width="match_parent"
@@ -75,7 +96,12 @@
                 android:ems="10"
                 android:hint="Apt./Suite # (optional)"
                 android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
 
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/address_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/address"
                 android:layout_width="match_parent"
@@ -84,6 +110,26 @@
                 android:hint="Address"
                 android:inputType="textPostalAddress" />
 
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/postalcode_tl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/postalcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Postal Code"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/city_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/city"
                 android:layout_width="match_parent"
@@ -91,38 +137,36 @@
                 android:ems="10"
                 android:hint="City"
                 android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
+            <Spinner
                 android:id="@+id/province"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Province"
-                android:inputType="textPostalAddress" />
+                android:entries="@array/province_arrays"
+                android:prompt="@string/province_prompt"
+                android:spinnerMode="dialog" />
 
-            <EditText
-                android:id="@+id/postalcode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Postal Code"
-                android:inputType="textPersonName" />
-
-            <EditText
+            <Spinner
                 android:id="@+id/country"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Country"
-                android:inputType="textPersonName" />
+                android:layout_marginTop="15dp"
+                android:entries="@array/country_arrays"
+                android:prompt="@string/country_prompt"
+                android:spinnerMode="dialog" />
 
-            <EditText
-                android:id="@+id/phoneNum"
+            <Button
+                android:id="@+id/submitCreditCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Phone"
-                android:inputType="phone" />
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/cancelCreditCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
 
         </LinearLayout>
 
