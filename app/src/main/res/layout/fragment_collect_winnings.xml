@@ -41,7 +41,8 @@
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
         android:text="Account Balance:"
-        android:textAppearance="@android:style/TextAppearance.Material.Small" />
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/balance_text"
@@ -52,7 +53,8 @@
         android:text="$250.25"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:textColor="@android:color/holo_orange_dark" />
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="26sp" />
 
     <View
         android:id="@+id/view6"
@@ -71,7 +73,8 @@
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
         android:text="What would you like to do?"
-        android:textAppearance="@android:style/TextAppearance.Material.Small" />
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/credit_winnings_button"
@@ -104,7 +107,7 @@
         android:id="@+id/view7"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:background="@android:color/darker_gray"
         android:paddingEnd="50dp"
         android:paddingRight="50dp" />
