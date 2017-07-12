@@ -28,10 +28,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:checkedButton="@+id/radioButton3"
         android:orientation="horizontal">
 
         <RadioButton
@@ -39,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:checked="true"
+            android:checked="false"
             android:text="American" />
 
         <RadioButton
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Fractional" />
-    </LinearLayout>
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView9"
@@ -75,17 +76,49 @@
         android:entries="@array/currency_arrays"
         android:overScrollMode="always" />
 
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Automatically Collect Winnings " />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroupColl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:checkedButton="@+id/radioButton5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="By Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="By Check" />
+    </RadioGroup>
+
     <View
         android:layout_width="fill_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/background_dark" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:elevation="1dp"
         android:text="Receive Email Notifications For My Bets" />
 
