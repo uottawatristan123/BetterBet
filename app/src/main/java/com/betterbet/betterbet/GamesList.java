@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -19,8 +18,13 @@ import java.util.List;
 public class GamesList extends AppCompatActivity {
 
     private ListView gamesList;
-    private ArrayList<Game> games = new ArrayList<Game>();
     private Spinner filter_spinner;
+    ArrayAdapter<Game> gamesListAdapter;
+
+    private ArrayList<Game> games = new ArrayList<Game>();
+    private ArrayList<Game> filteredGames1 = new ArrayList<Game>();
+    private ArrayList<Game> filteredGames2 = new ArrayList<Game>();
+    private ArrayList<Game> filteredGames3 = new ArrayList<Game>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +38,14 @@ public class GamesList extends AppCompatActivity {
 
         spinnerSetup();
         createGames();
+        createFilteredGames();
 
-        ListAdapter gamesListAdapter = new CustomAdapter(this, games);
+        gamesListAdapter = new CustomAdapter(this, games);
+
 
         gamesList.setAdapter(gamesListAdapter);
+
+
 
         //Action when ListItem is clicked
         gamesList.setOnItemClickListener(
@@ -75,6 +83,22 @@ public class GamesList extends AppCompatActivity {
                     }
                 }
         );
+
+        //When filter is applied to the games
+        filter_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.d("LOG", "Filter applied");
+                games.clear();
+                createGames();
+                gamesListAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
 
 
@@ -84,6 +108,25 @@ public class GamesList extends AppCompatActivity {
         for(int i =0; i<30; i++){
             Game gameToAdd = new Game();
             games.add(gameToAdd);
+        }
+    }
+
+    public void createFilteredGames(){
+        Game first = new Game("Date", "", "", "Odds", "Odds");
+        filteredGames1.add(first);
+        filteredGames2.add(first);
+        filteredGames3.add(first);
+        for(int i =0; i<30; i++){
+            Game gameToAdd = new Game();
+            filteredGames1.add(gameToAdd);
+        }
+        for(int i =0; i<30; i++){
+            Game gameToAdd = new Game();
+            filteredGames2.add(gameToAdd);
+        }
+        for(int i =0; i<30; i++){
+            Game gameToAdd = new Game();
+            filteredGames3.add(gameToAdd);
         }
     }
 
