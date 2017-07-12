@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Quick Bet"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <TextView
+        android:id="@+id/team_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a Team:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginLeft="50dp">
+
+        <RadioButton
+            android:id="@+id/left_team_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="0dp"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/right_team_rdo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.28"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="0dp"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bet Amount:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <EditText
+        android:id="@+id/bet_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:id="@+id/betButton"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Place Bet"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="18sp" />
+</LinearLayout>

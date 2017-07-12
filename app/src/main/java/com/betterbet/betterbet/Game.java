@@ -23,31 +23,28 @@ public class Game {
                     "Warriors",
                     "Lakers",
                     "Furry",
-                    "White Caps",
+                    "Whites",
                     "Bills",
                     "Pats",
                     "Yankees",
                     "Cowboys",
                     "Knicks",
-                    "Redskins",
+                    "Reds",
                     "Giants",
                     "76ers",
-                    "Clippers",
-                    "Packers",
-                    "Wizards",
+                    "Clips",
+                    "Packs",
                     "49ers",
                     "Mets",
-                    "Raptors",
-                    "Cavaliers",
-                    "Chargers",
-                    "Dodgers",
-                    "Mavericks",
+                    "Rapts",
+                    "Cavs",
+                    "Mavs",
                     "Pistons",
                     "Rams",
                     "Red Sox",
                     "Tigers",
                     "Celtics",
-                    "Raiders",
+                    "Raids",
                     "Bears"
             };
     private String[] months = new String[]
@@ -72,6 +69,14 @@ public class Game {
         this.date = generateRandomDate();
         this.right_team_odds = generateRandomOdds();
         this.left_team_odds = generateRandomOdds();
+    }
+
+    public Game(String date, String lTeam, String rTeam, String right_team_odds, String left_team_odds){
+        this.date = date;
+        this.left_team_name = lTeam;
+        this.right_team_name = rTeam;
+        this.right_team_odds = right_team_odds;
+        this.left_team_odds = left_team_odds;
     }
 
     public String generateRandomTeam(){
@@ -100,10 +105,7 @@ public class Game {
         int mIndex = rMonth.nextInt(months.length);
         month = months[mIndex];
 
-        String toReturn = Integer.toString(dayInt);
-        toReturn.concat(month + " ,");
-        toReturn.concat(year);
-
+        String toReturn = Integer.toString(dayInt) + " " + month + " , " + year;
         return toReturn;
     }
 

@@ -5,55 +5,71 @@
 
     <TextView
         android:id="@+id/left_team_odds"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="30dp"
+        android:paddingTop="25dp"
         android:text="+500"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/left_team_name"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="30dp"
+        android:paddingTop="25dp"
         android:text="Sens"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="30dp"
+        android:paddingTop="25dp"
         android:text="October 10, 2017"
         android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="@android:color/black" />
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/right_team_name"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="30dp"
+        android:paddingTop="25dp"
         android:text="Leafs"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/right_team_odds"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="30dp"
+        android:paddingTop="25dp"
         android:text="-200"
-        android:textAlignment="center"
+        android:textAlignment="viewEnd"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 </LinearLayout>
