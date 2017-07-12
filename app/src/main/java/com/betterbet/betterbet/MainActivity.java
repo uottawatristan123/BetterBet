@@ -112,17 +112,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_mybets) {
             selectedFragment = MyBetsFragment.newInstance();
         } else if (id == R.id.nav_statistics) {
-//            selectedFragment = StatisticsFragment.newInstance();
-//            break;
+            selectedFragment = StatisticsFragment.newInstance();
         } else if (id == R.id.nav_collect) {
-//            selectedFragment = CollectWinningsFragment.newInstance();
-//            break;
+            selectedFragment = CollectWinningsFragment.newInstance();
         } else if (id == R.id.nav_myaccount) {
-//            selectedFragment = MyAccountFragment.newInstance();
-//            break;
+            selectedFragment = MyAccountFragment.newInstance();
         }else if (id == R.id.nav_contact) {
-//            selectedFragment = ContactUsFragment.newInstance();
-//            break;
+            selectedFragment = ContactUsFragment.newInstance();
         }else if (id == R.id.nav_logout) {
             //Broadcast logout event to close all non-login/register activities
             Intent broadcastIntent = new Intent();
