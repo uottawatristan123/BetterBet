@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -88,7 +89,7 @@ public class GamesFragment extends Fragment {
                             public void onClick(View v){
                                 //When Bet Button is clicked
                                 //Should probably show message saying bet went through
-                                Log.d("LOG", "Bet Accepted");
+                                Toast.makeText(getContext(), "Your bet was received. Goodluck!", Toast.LENGTH_LONG).show();
                             }
                         });
 
