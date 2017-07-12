@@ -40,4 +40,9 @@
         <item>Newfoundland and Labrador</item>
         <item>Prince Edward Island</item>
     </string-array>
+    <string-array name="currency_arrays">
+        <item>CAD (C$)</item>
+        <item>USD (US$)</item>
+        <item>Pound (£)</item>
+    </string-array>
 </resources>

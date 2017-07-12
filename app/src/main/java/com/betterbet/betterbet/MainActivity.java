@@ -89,12 +89,18 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        getSupportFragmentManager().popBackStack();
+        Fragment selectedFragment = null;
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            selectedFragment = SettingsFragment.newInstance();
         }
 
-        return super.onOptionsItemSelected(item);
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.content, selectedFragment);
+        transaction.commit();
+        return true;
+        //return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
