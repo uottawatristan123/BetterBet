@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -9,6 +10,9 @@
         android:id="@+id/title_text"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:text="Quick Bet"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Headline" />
@@ -17,13 +21,17 @@
         android:id="@+id/team_select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:text="Select a Team:"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:layout_marginLeft="50dp">
+        android:layout_marginLeft="50dp"
+        android:paddingRight="50dp">
 
         <RadioButton
             android:id="@+id/left_team_name"
@@ -32,9 +40,11 @@
             android:layout_weight="0.28"
             android:fontFamily="sans-serif"
             android:paddingLeft="0dp"
+            android:paddingRight="50dp"
             android:text="RadioButton"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:buttonTint="@android:color/holo_orange_dark" />
 
         <RadioButton
             android:id="@+id/right_team_rdo"
@@ -43,17 +53,22 @@
             android:layout_weight="0.28"
             android:fontFamily="sans-serif"
             android:paddingLeft="0dp"
+            android:paddingRight="50dp"
             android:text="RadioButton"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:buttonTint="@android:color/holo_orange_dark" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:text="Bet Amount:"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/bet_amount"
@@ -61,6 +76,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number|numberDecimal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
@@ -69,9 +86,12 @@
         style="@android:style/Widget.Material.Light.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_orange_dark"
         android:padding="20dp"
         android:text="Place Bet"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </LinearLayout>
