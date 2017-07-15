@@ -57,11 +57,11 @@ public class LoginActivity extends AppCompatActivity {
                         Intent RegistrationIntent = new Intent(LoginActivity.this, RegistrationActivity.class);
                         startActivity(RegistrationIntent);
                     }
-                    txtSignUp.setTextColor(Color.argb(100, 255, 0, 0));
+                    txtSignUp.setTextColor(Color.argb(255, 255, 145, 0));
                     return true;
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                     startClickTime = Calendar.getInstance().getTimeInMillis();
-                    txtSignUp.setTextColor(Color.argb(50, 255, 0, 0));
+                    txtSignUp.setTextColor(Color.argb(75, 255, 145, 0));
                     return true;
                 }
                 return false;
