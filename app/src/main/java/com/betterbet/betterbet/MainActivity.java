@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity
             sendBroadcast(broadcastIntent);
             Intent LoginIntent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(LoginIntent);
+            return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
