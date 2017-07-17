@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Better Bet");
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.content, HomeFragment.newInstance());
@@ -101,21 +102,29 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         getSupportFragmentManager().popBackStack();
+        getSupportActionBar().setTitle("Better Bet");
         Fragment selectedFragment = null;
         if (id == R.id.nav_home) {
             selectedFragment = HomeFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         } else if (id == R.id.nav_games) {
             selectedFragment = GamesFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         } else if (id == R.id.nav_mybets) {
             selectedFragment = MyBetsFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         } else if (id == R.id.nav_statistics) {
             selectedFragment = StatisticsFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         } else if (id == R.id.nav_collect) {
             selectedFragment = CollectWinningsFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         } else if (id == R.id.nav_myaccount) {
             selectedFragment = MyAccountFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         }else if (id == R.id.nav_contact) {
             selectedFragment = ContactUsFragment.newInstance();
+            getSupportActionBar().setTitle("Better Bet");
         }else if (id == R.id.nav_logout) {
             //Broadcast logout event to close all non-login/register activities
             Intent broadcastIntent = new Intent();

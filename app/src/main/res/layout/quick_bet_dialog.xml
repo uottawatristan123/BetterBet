@@ -106,7 +106,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/close"
             style="@android:style/Widget.Material.Light.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

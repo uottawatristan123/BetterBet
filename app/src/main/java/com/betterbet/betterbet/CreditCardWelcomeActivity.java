@@ -10,6 +10,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.braintreepayments.cardform.utils.CardType;
 import com.braintreepayments.cardform.view.CardForm;
@@ -220,6 +221,7 @@ public class CreditCardWelcomeActivity extends AppCompatActivity {
 
                 if(firstName.getError()== null && lastName.getError()==null
                         && phone.getError()==null && password.getError()==null && cPassword.getError()==null) {
+                    Toast.makeText(CreditCardWelcomeActivity.this,"You have successfully registered a credit card ",Toast.LENGTH_LONG).show();
                     Intent MainIntent = new Intent(CreditCardWelcomeActivity.this, MainActivity.class);
                     startActivity(MainIntent);
                 }

@@ -11,6 +11,7 @@ import android.text.TextWatcher;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -268,6 +269,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 if(username.getError()==null && firstName.getError()== null && lastName.getError()==null && email.getError()==null
                         && phone.getError()==null && password.getError()==null && cPassword.getError()==null) {
+                    Toast.makeText(RegistrationActivity.this,"Hello "+ firstNameEdit.getText().toString() + ", your account has been created.",Toast.LENGTH_LONG).show();
+
                     Intent WelcomeIntent = new Intent(RegistrationActivity.this, WelcomeActivity.class);
                     startActivity(WelcomeIntent);
                 }

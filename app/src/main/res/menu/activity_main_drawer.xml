@@ -22,25 +22,20 @@
             android:id="@+id/nav_collect"
             android:icon="@drawable/ic_attach_money_black_24dp"
             android:title="Collect Winnings" />
+        <item
+            android:id="@+id/nav_myaccount"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact_mail_black_24dp"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+
     </group>
-
-
-    <item android:title="Additional">
-        <menu>
-            <item
-                android:id="@+id/nav_myaccount"
-                android:icon="@drawable/ic_account_box_black_24dp"
-                android:title="My Account" />
-            <item
-                android:id="@+id/nav_contact"
-                android:icon="@drawable/ic_contact_mail_black_24dp"
-                android:title="Contact Us" />
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_exit_to_app_black_24dp"
-                android:title="Logout" />
-        </menu>
-    </item>
 
 
 

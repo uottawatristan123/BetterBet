@@ -3,9 +3,12 @@ package com.betterbet.betterbet;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.RadioGroup;
@@ -32,6 +35,7 @@ public class SettingsFragment extends Fragment {
         final CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkBox3);
         final RadioGroup rG = (RadioGroup) view.findViewById(R.id.radioGroupColl);
 
+
         checkBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,6 +46,7 @@ public class SettingsFragment extends Fragment {
                 }
             }
         });
+
 
         return view;
     }
