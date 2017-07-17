@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -80,6 +81,22 @@ public class MyAccountFragment extends Fragment {
                                 childPosition), Toast.LENGTH_SHORT
                 ).show();
                 return false;
+            }
+        });
+
+        Button changeP = (Button) view.findViewById(R.id.changePass);
+        changeP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Change Password is not currently available.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button deactivateAccount = (Button) view.findViewById(R.id.deactivateAccount);
+        deactivateAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Deactivate Accocunt is not currently available.", Toast.LENGTH_SHORT).show();
             }
         });
 

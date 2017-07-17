@@ -26,10 +26,8 @@ public class ExpandableMyAccountListDataPump {
         creditCard.add("Master Card XXXX XXXX XXXX 2323");
 
         expandableListDetail.put("Personal Information", persInformation);
-        expandableListDetail.put("Billing Address", billingAddress);
         expandableListDetail.put("Credit Card Information", creditCard);
-        expandableListDetail.put("Change Password", null);
-        expandableListDetail.put("Deactivate Account", null);
+        expandableListDetail.put("Billing Address", billingAddress);
         return expandableListDetail;
     }
 }
