@@ -9,47 +9,134 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light"
+        android:background="@color/colorPrimaryDark"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:text="Game Info"
+        android:text="Bet Information"
         android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.28"
-        android:lineSpacingExtra="10sp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="15dp"
-        android:text="This game is being played for the championship of its respective sport. Experts have predicted the home teams advantage will play a large part and will most likely impact the game more than previous games."
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:textColor="@color/cardview_light_background" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"
-        android:background="@android:color/holo_orange_light"
-        android:text="Potential winnings:"
+        android:elevation="1dp"
+        android:text="Team"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light"
-        android:paddingBottom="10dp"
-        android:paddingTop="0dp"
-        android:text="$122.00"
+        android:elevation="1dp"
+        android:text="Cleveland Browns"
         android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorAccent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:elevation="1dp"
+        android:text="Odds"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:text="+1000"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorAccent" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:elevation="1dp"
+        android:text="Amount Bet (USD)"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:text="$100.00"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorAccent" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:paddingEnd="50dp"
+        android:paddingRight="50dp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:elevation="1dp"
+        android:text="Potential Winnings (USD)"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:text="$1000.00"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorPrimaryLight"
+        android:text="Close"
+        android:textColor="@color/cardview_light_background"
         android:textStyle="bold" />
 
 </LinearLayout>

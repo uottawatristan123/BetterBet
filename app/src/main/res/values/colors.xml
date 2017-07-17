@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#ff9100</color>
     <color name="colorPrimaryLight">#484848</color>
-    <color name="potentialWining">#88d4af37</color>
-    <color name="potentialLoss">#89d50000</color>
-    <color name="potentialOutcome">#88ff9100</color>
+    <color name="potentialWining">#8cd4af37</color>
+    <color name="potentialLoss">#8dcf1414</color>
+    <color name="potentialOutcome">#8eff9100</color>
     <color name="colorAccentDark">#c56200</color>
     <color name="shadedWaiting">#48ff9100</color>
 </resources>
