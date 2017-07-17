@@ -4,22 +4,34 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/left_team_odds"
+    <FrameLayout
+        android:id="@+id/frm1"
         android:layout_width="25dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:fontFamily="sans-serif"
-        android:text="+500"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Small"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/left_team_odds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="10.3dp"
+            android:paddingTop="25dp"
+            android:text="+500"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/lin1"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:elevation="1dp"
         android:orientation="vertical">
 
         <ImageView
@@ -36,11 +48,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif"
+            android:paddingBottom="1.6dp"
             android:text="Cle"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.Material.Small"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -75,6 +89,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lin2"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -95,6 +110,7 @@
             android:layout_weight="1"
             android:elevation="1dp"
             android:fontFamily="sans-serif"
+            android:paddingBottom="1.6dp"
             android:text="Mia"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.Material.Small"
@@ -102,16 +118,25 @@
             android:textSize="14sp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/right_team_odds"
+    <FrameLayout
+        android:id="@+id/frm2"
         android:layout_width="25dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:fontFamily="sans-serif"
-        android:paddingTop="25dp"
-        android:text="-200"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Small"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/right_team_odds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="10.3dp"
+            android:paddingTop="25dp"
+            android:text="-200"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </FrameLayout>
+
 </LinearLayout>

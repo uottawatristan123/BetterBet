@@ -54,7 +54,7 @@ public class MyBetsFragment extends Fragment {
 
         createGames();
 
-        gamesListAdapter = new CustomAdapter(context, games);
+        gamesListAdapter = new CustomAdapter2(context, games);
 
 
         gamesList.setAdapter(gamesListAdapter);
@@ -79,9 +79,7 @@ public class MyBetsFragment extends Fragment {
     }
 
     public void createGames(){
-        Game first = new Game("Date", "", "", "Odds", "Odds");
-        games.add(first);
-        for(int i =0; i<5; i++){
+        for(int i =0; i<15; i++){
             Game gameToAdd = new Game();
             games.add(gameToAdd);
         }

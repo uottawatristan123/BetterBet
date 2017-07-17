@@ -10,6 +10,7 @@ public class Game {
     private String date;
     private String right_team_name;
     private String right_team_odds;
+    private boolean completed;
 
     private String[] teams = new String[]
             {
@@ -77,6 +78,14 @@ public class Game {
         } else {
             this.right_team_odds = "+"+generateRandomOdds();
             this.left_team_odds = "-"+generateRandomOdds();
+        }
+        Random ranNum = new Random();
+        int ranNumR = ranNum.nextInt(3);
+        if(ranNumR==0){
+            this.completed = true;
+        } else
+        {
+            this.completed = false;
         }
     }
 
@@ -152,6 +161,8 @@ public class Game {
     }
 
     public String getTime () { return this.time; }
+
+    public boolean getCompleted () { return this.completed; }
 
 
 }
