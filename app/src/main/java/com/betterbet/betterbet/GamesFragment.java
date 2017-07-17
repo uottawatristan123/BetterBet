@@ -27,6 +27,7 @@ public class GamesFragment extends Fragment {
 
     private ListView gamesList;
     private Spinner filter_spinner;
+    private Spinner sort_spinner;
     ArrayAdapter<Game> gamesListAdapter;
 
     private ArrayList<Game> games = new ArrayList<Game>();
@@ -54,8 +55,10 @@ public class GamesFragment extends Fragment {
 
         gamesList = (ListView) view.findViewById(R.id.gamesList);
         filter_spinner = (Spinner) view.findViewById(R.id.filter_spinner);
+        sort_spinner = (Spinner) view.findViewById(R.id.sort_spinner);
 
         spinnerSetup();
+        spinner2Setup();
         createGames();
         createFilteredGames();
 
@@ -120,8 +123,8 @@ public class GamesFragment extends Fragment {
     }
 
     public void createGames(){
-        Game first = new Game("Date", "", "", "Odds", "Odds");
-        games.add(first);
+//        Game first = new Game("Date", "", "", "Odds", "Odds");
+//        games.add(first);
         for(int i =0; i<30; i++){
             Game gameToAdd = new Game();
             games.add(gameToAdd);
@@ -129,10 +132,10 @@ public class GamesFragment extends Fragment {
     }
 
     public void createFilteredGames(){
-        Game first = new Game("Date", "", "", "Odds", "Odds");
-        filteredGames1.add(first);
-        filteredGames2.add(first);
-        filteredGames3.add(first);
+//        Game first = new Game("Date", "", "", "Odds", "Odds");
+//        filteredGames1.add(first);
+//        filteredGames2.add(first);
+//        filteredGames3.add(first);
         for(int i =0; i<30; i++){
             Game gameToAdd = new Game();
             filteredGames1.add(gameToAdd);
@@ -162,6 +165,24 @@ public class GamesFragment extends Fragment {
 
         // attaching data adapter to spinner
         filter_spinner.setAdapter(dataAdapter);
+    }
+
+    public void spinner2Setup(){
+        List<String> filters = new ArrayList<String>();
+        filters.add("Popularity");
+        filters.add("Date");
+        filters.add("Home Team");
+        filters.add("Away Team");
+        filters.add("Home Team Odds");
+        filters.add("Away Team Odds");
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item, filters);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        sort_spinner.setAdapter(dataAdapter);
     }
 
 }

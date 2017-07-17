@@ -6,6 +6,7 @@ public class Game {
     //Class variables
     private String left_team_odds;
     private String left_team_name;
+    private String time;
     private String date;
     private String right_team_name;
     private String right_team_odds;
@@ -66,9 +67,17 @@ public class Game {
     public Game(){
         this.left_team_name = generateRandomTeam();
         this.right_team_name = generateRandomTeam();
+        this.time = generateRandomTime();
         this.date = generateRandomDate();
-        this.right_team_odds = generateRandomOdds();
-        this.left_team_odds = generateRandomOdds();
+        Random randomNum = new Random();
+        int result = randomNum.nextInt(2);
+        if(result == 0) {
+            this.right_team_odds = "-"+generateRandomOdds();
+            this.left_team_odds = "+"+generateRandomOdds();
+        } else {
+            this.right_team_odds = "+"+generateRandomOdds();
+            this.left_team_odds = "-"+generateRandomOdds();
+        }
     }
 
     public Game(String date, String lTeam, String rTeam, String right_team_odds, String left_team_odds){
@@ -86,11 +95,21 @@ public class Game {
     }
 
     public String generateRandomOdds(){
-        int low = 0;
+        int low = 100;
         int high = 1000;
         Random random = new Random();
         int num = random.nextInt(high - low + 1);
         return Integer.toString(num);
+    }
+
+    public String generateRandomTime(){
+        String time;
+
+        Random rTime = new Random();
+        int timeInt = rTime.nextInt(10+1);
+
+        String toReturn = timeInt + ":00 pm";
+        return toReturn;
     }
 
     public String generateRandomDate(){
@@ -101,11 +120,14 @@ public class Game {
         Random rday = new Random();
         int dayInt = rday.nextInt(30);
 
-        Random rMonth = new Random();
-        int mIndex = rMonth.nextInt(months.length);
-        month = months[mIndex];
+        Random rmonth = new Random();
+        int monthInt = rday.nextInt(12);
 
-        String toReturn = Integer.toString(dayInt) + " " + month + " , " + year;
+//        Random rMonth = new Random();
+//        int mIndex = rMonth.nextInt(months.length);
+//        month = months[mIndex];
+
+        String toReturn = dayInt + "/" + monthInt + "/" + year;
         return toReturn;
     }
 
@@ -128,6 +150,8 @@ public class Game {
     public String getDate(){
         return this.date;
     }
+
+    public String getTime () { return this.time; }
 
 
 }

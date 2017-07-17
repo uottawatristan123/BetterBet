@@ -43,7 +43,6 @@ public class CollectWinningsFragment extends Fragment {
 
         balance_text = (TextView) getView().findViewById(R.id.balance_text);
         collect_button = (Button) getView().findViewById(R.id.credit_winnings_button);
-        add_button = (Button) getView().findViewById(R.id.add_funds_button);
 
         collect_button.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View v){
@@ -65,31 +64,6 @@ public class CollectWinningsFragment extends Fragment {
                         dialogInterface.dismiss();
                     }
                 });
-                dialog.show();
-            }
-        });
-
-        add_button.setOnClickListener(new Button.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Context context = getContext();
-                AlertDialog dialog = new AlertDialog.Builder(context).create();
-                dialog.setTitle("Add funds");
-                dialog.setMessage("Please confirm that you would like to add funds to your account");
-                dialog.setButton(AlertDialog.BUTTON_POSITIVE, "Confirm", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-
-                dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-
                 dialog.show();
             }
         });
