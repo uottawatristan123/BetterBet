@@ -85,7 +85,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Amount to Collect (US$)"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
 
     </android.support.design.widget.TextInputLayout>
 

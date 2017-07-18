@@ -115,7 +115,7 @@ public class Game {
         String time;
 
         Random rTime = new Random();
-        int timeInt = rTime.nextInt(10+1);
+        int timeInt = rTime.nextInt(10)+1;
 
         String toReturn = timeInt + ":00 pm";
         return toReturn;
@@ -127,10 +127,10 @@ public class Game {
         String year = "2017";
 
         Random rday = new Random();
-        int dayInt = rday.nextInt(30);
+        int dayInt = rday.nextInt(30)+1;
 
         Random rmonth = new Random();
-        int monthInt = rday.nextInt(12);
+        int monthInt = rday.nextInt(12)+1;
 
 //        Random rMonth = new Random();
 //        int mIndex = rMonth.nextInt(months.length);

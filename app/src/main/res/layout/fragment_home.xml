@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView33"
                         android:elevation="2dp"
-                        android:text="1000 (US$)"
+                        android:text="10,000 (US$)"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
@@ -92,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@+id/textView31"
                         android:layout_centerHorizontal="true"
-                        android:text="7 - 0"
+                        android:text="9 - 13"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="12sp" />
 
@@ -186,7 +186,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_miami_dolphins_logo" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -196,7 +196,7 @@
                         android:layout_alignBottom="@+id/textView32"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="20dp"
-                        android:text="DEN"
+                        android:text="MIA"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
                         android:textSize="10sp" />
@@ -208,6 +208,122 @@
                         android:layout_above="@+id/textView31"
                         android:layout_centerHorizontal="true"
                         android:text="7 - 0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="BOS"
+                        android:textSize="10sp"
+                        tools:text="BOS" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="LIVE"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:elevation="1dp"
+                        android:text="Potential Winnings"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView33"
+                        android:elevation="2dp"
+                        android:text="5000 (US$)"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="CHI"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView31"
+                        android:layout_centerHorizontal="true"
+                        android:text="14-19"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="12sp" />
 
@@ -301,7 +417,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_ottawa_senators" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -311,7 +427,7 @@
                         android:layout_alignBottom="@+id/textView32"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="20dp"
-                        android:text="DEN"
+                        android:text="OTT"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
                         android:textSize="10sp" />
@@ -322,7 +438,7 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@+id/textView31"
                         android:layout_centerHorizontal="true"
-                        android:text="7 - 0"
+                        android:text="20 - 12"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="12sp" />
 
@@ -403,7 +519,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView33"
                         android:elevation="2dp"
-                        android:text="1000 (US$)"
+                        android:text="4550 (US$)"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
@@ -449,7 +565,7 @@
                         android:layout_alignTop="@+id/imageView3"
                         android:layout_marginEnd="12dp"
                         android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+                        card_view:srcCompat="@drawable/ic_buffalo_bills_logo" />
 
                     <TextView
                         android:id="@+id/textView32"
@@ -458,7 +574,7 @@
                         android:layout_alignEnd="@+id/imageView2"
                         android:layout_below="@+id/imageView2"
                         android:layout_marginEnd="8dp"
-                        android:text=" OAK"
+                        android:text="BUF"
                         android:textSize="10sp" />
 
                     <FrameLayout
@@ -531,122 +647,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/textView34"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/textView31"
-                        android:layout_centerHorizontal="true"
-                        android:text="7 - 0"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="12sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="LIVE"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
-                        android:text="Potential Winnings"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/textView27"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView33"
-                        android:elevation="2dp"
-                        android:text="1000 (US$)"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_cleveland_browns_logo" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -784,7 +785,427 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_buffalo_bills_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="DEN"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_ottawa_senators" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text=" OAK"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="7:00 pm - 31/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:elevation="1dp"
+                        android:text="Potential Winnings"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView28"
+                        android:elevation="2dp"
+                        android:text="500 (US$)"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="BOS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="CHI"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="9:30 pm - 19/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:elevation="1dp"
+                        android:text="Potential Winnings"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView28"
+                        android:elevation="2dp"
+                        android:text="3000 (US$)"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="OAK"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_miami_dolphins_logo" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="MIA"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="7:00 pm - 31/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:elevation="1dp"
+                        android:text="Potential Winnings"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView28"
+                        android:elevation="2dp"
+                        android:text="1000 (US$)"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_cleveland_browns_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="DEN"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text=" OAK"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="7:00 pm - 31/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:elevation="1dp"
+                        android:text="Potential Winnings"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView28"
+                        android:elevation="2dp"
+                        android:text="1000 (US$)"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_buffalo_bills_logo" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -912,427 +1333,7 @@
                         android:layout_alignTop="@+id/imageView3"
                         android:layout_marginEnd="12dp"
                         android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView28"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
-                        android:text="Potential Winnings"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/textView37"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView28"
-                        android:elevation="2dp"
-                        android:text="1000 (US$)"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView28"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
-                        android:text="Potential Winnings"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/textView37"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView28"
-                        android:elevation="2dp"
-                        android:text="1000 (US$)"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView28"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
-                        android:text="Potential Winnings"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/textView37"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView28"
-                        android:elevation="2dp"
-                        android:text="1000 (US$)"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView28"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
-                        android:text="Potential Winnings"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/textView37"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView28"
-                        android:elevation="2dp"
-                        android:text="1000 (US$)"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
 
                     <TextView
                         android:id="@+id/textView32"
@@ -1428,6 +1429,442 @@
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="8dp"
                         android:elevation="1dp"
+                        android:text="-500"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="CHI"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_ottawa_senators" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="OTT"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="6:30 pm - 27/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+550"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
+                        android:text="-275"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="OAK"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_cleveland_browns_logo" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="CLD"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="4:00 pm - 23/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+550"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
+                        android:text="-750"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_miami_dolphins_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="MIA"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text=" OAK"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="7:45 pm - 26/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+125"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
+                        android:text="-425"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_buffalo_bills_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="BUF"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="BOS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="8:00 pm - 26/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+900"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
                         android:text="-200"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -1440,7 +1877,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_cleveland_browns_logo" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -1549,7 +1986,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_ottawa_senators" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -1571,443 +2008,7 @@
                         android:layout_alignTop="@+id/imageView3"
                         android:layout_marginEnd="12dp"
                         android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
 
                     <TextView
                         android:id="@+id/textView32"
@@ -2116,7 +2117,225 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="BOS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_cleveland_browns_logo" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text=" OAK"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="8:00 pm - 28/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+800"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
+                        android:text="-150"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="OAK"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_miami_dolphins_logo" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text="MIA"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="11:00 pm - 31/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+340"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
+                        android:text="-250"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -2127,6 +2346,115 @@
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="20dp"
                         android:text="DEN"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginLeft="10dp"
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView2"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginEnd="8dp"
+                        android:text=" OAK"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:elevation="1dp"
+                            android:text="8:30 pm - 25/07/2017"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="144dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignStart="@+id/imageView3"
+                        android:layout_marginLeft="4dp"
+                        android:elevation="1dp"
+                        android:text="+450"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/imageView2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="1dp"
+                        android:text="-900"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        card_view:srcCompat="@drawable/ic_buffalo_bills_logo" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView32"
+                        android:layout_alignBottom="@+id/textView32"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:text="BUF"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="10sp" />
 
@@ -2198,7 +2526,7 @@
                         android:layout_alignStart="@+id/imageView3"
                         android:layout_marginLeft="4dp"
                         android:elevation="1dp"
-                        android:text="+900"
+                        android:text="+450"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
@@ -2213,7 +2541,7 @@
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="8dp"
                         android:elevation="1dp"
-                        android:text="-200"
+                        android:text="-375"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
@@ -2225,7 +2553,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_boston_celtics" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -2235,7 +2563,7 @@
                         android:layout_alignBottom="@+id/textView32"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="20dp"
-                        android:text="DEN"
+                        android:text="BOS"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="10sp" />
 
@@ -2307,7 +2635,7 @@
                         android:layout_alignStart="@+id/imageView3"
                         android:layout_marginLeft="4dp"
                         android:elevation="1dp"
-                        android:text="+900"
+                        android:text="+800"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
@@ -2322,7 +2650,7 @@
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="8dp"
                         android:elevation="1dp"
-                        android:text="-200"
+                        android:text="-725"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorAccent"
@@ -2334,7 +2662,7 @@
                         android:layout_height="36dp"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
+                        card_view:srcCompat="@drawable/ic_chicago_cubs_logo" />
 
                     <TextView
                         android:id="@+id/textView31"
@@ -2344,7 +2672,7 @@
                         android:layout_alignBottom="@+id/textView32"
                         android:layout_alignParentStart="true"
                         android:layout_marginStart="20dp"
-                        android:text="DEN"
+                        android:text="CHI"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="10sp" />
 
@@ -2356,7 +2684,7 @@
                         android:layout_alignTop="@+id/imageView3"
                         android:layout_marginEnd="12dp"
                         android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
+                        card_view:srcCompat="@drawable/ic_miami_dolphins_logo" />
 
                     <TextView
                         android:id="@+id/textView32"
@@ -2365,7 +2693,7 @@
                         android:layout_alignEnd="@+id/imageView2"
                         android:layout_below="@+id/imageView2"
                         android:layout_marginEnd="8dp"
-                        android:text=" OAK"
+                        android:text="MIA"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textSize="10sp" />
 
@@ -2383,334 +2711,7 @@
                             android:layout_marginBottom="4dp"
                             android:layout_marginTop="4dp"
                             android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
-                            android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                            android:textColor="@android:color/background_light"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-                    </FrameLayout>
-
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="144dp"
-                android:layout_height="108dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="4dp"
-                card_view:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView33"
-                        android:layout_alignStart="@+id/imageView3"
-                        android:layout_marginLeft="4dp"
-                        android:elevation="1dp"
-                        android:text="+900"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignStart="@+id/imageView2"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginTop="8dp"
-                        android:elevation="1dp"
-                        android:text="-200"
-                        android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="12dp"
-                        card_view:srcCompat="@drawable/ic_denver_broncos_logo" />
-
-                    <TextView
-                        android:id="@+id/textView31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/textView32"
-                        android:layout_alignBottom="@+id/textView32"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="20dp"
-                        android:text="DEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignTop="@+id/imageView3"
-                        android:layout_marginEnd="12dp"
-                        android:layout_marginLeft="10dp"
-                        card_view:srcCompat="@drawable/ic_oakland_raiders" />
-
-                    <TextView
-                        android:id="@+id/textView32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/imageView2"
-                        android:layout_below="@+id/imageView2"
-                        android:layout_marginEnd="8dp"
-                        android:text=" OAK"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                        android:textSize="10sp" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView31"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginTop="4dp"
-                            android:elevation="1dp"
-                            android:text="7:00 pm - 31/07/2017"
+                            android:text="8:30 pm - 19/07/2017"
                             android:textAlignment="center"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                             android:textColor="@android:color/background_light"
