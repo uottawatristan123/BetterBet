@@ -1,14 +1,14 @@
 package com.betterbet.betterbet;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
+import android.content.res.TypedArray;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,9 +17,11 @@ import java.util.Random;
 
 
 class CustomAdapter2 extends ArrayAdapter<Game>{
+    private TypedArray imgs;
 
     CustomAdapter2(Context context, ArrayList<Game> game){
         super(context, R.layout.custom_game_row, game);
+        imgs = context.getResources().obtainTypedArray(R.array.teams);
     }
 
     @Override
@@ -90,6 +92,13 @@ class CustomAdapter2 extends ArrayAdapter<Game>{
             }
         }
 
+        ImageView left_team_img = (ImageView) customView.findViewById(R.id.left_team_img);
+        ImageView right_team_img = (ImageView) customView.findViewById(R.id.right_team_img);
+
+        left_team_img.setImageResource(getImageID());
+        right_team_img.setImageResource(getImageID());
+
+
         left_team_odds.setText(left_team_odds_str);
 //        left_team_name.setText(left_team_name_str);
         time.setText(date_time);
@@ -99,6 +108,12 @@ class CustomAdapter2 extends ArrayAdapter<Game>{
 
 
         return customView;
+    }
+
+    public int getImageID(){
+        final Random random = new Random();
+        final int rndInt = random.nextInt(imgs.length());
+        return  imgs.getResourceId(rndInt, 0);
     }
 
 

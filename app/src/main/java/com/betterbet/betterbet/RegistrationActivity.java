@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import es.dmoral.toasty.Toasty;
+
 public class RegistrationActivity extends AppCompatActivity {
 
     @Override
@@ -266,8 +268,12 @@ public class RegistrationActivity extends AppCompatActivity {
                 {
                     cPassword.setError("Confirm Password is required");
                 }
+                boolean passDontMatch = !passwordEdit.getText().toString().equals(cPasswordEdit.getText().toString());
+                if(passDontMatch){
+                    Toasty.error(RegistrationActivity.this, "Password and Confirm password must match", Toast.LENGTH_LONG, true).show();
+                }
 
-                if(username.getError()==null && firstName.getError()== null && lastName.getError()==null && email.getError()==null
+                if(!passDontMatch && username.getError()==null && firstName.getError()== null && lastName.getError()==null && email.getError()==null
                         && phone.getError()==null && password.getError()==null && cPassword.getError()==null) {
                     Toast.makeText(RegistrationActivity.this,"Hello "+ firstNameEdit.getText().toString() + ", your account has been created.",Toast.LENGTH_LONG).show();
 
