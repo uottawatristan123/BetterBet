@@ -35,8 +35,8 @@ public class CreditCardWelcomeActivity extends AppCompatActivity {
         mSupportedCardTypesView = (SupportedCardTypesView) findViewById(R.id.supported_card_types);
         mSupportedCardTypesView.setSupportedCardTypes(SUPPORTED_CARD_TYPES);
 
-        CardForm cardForm = (CardForm) findViewById(R.id.card_form);
-        cardForm.cardRequired(true)
+        mCardForm = (CardForm) findViewById(R.id.card_form);
+        mCardForm.cardRequired(true)
                 .expirationRequired(true)
                 .cvvRequired(true)
                 .actionLabel("Purchase")
@@ -218,8 +218,11 @@ public class CreditCardWelcomeActivity extends AppCompatActivity {
                 {
                     cPassword.setError("Postal Code is required");
                 }
+                if(!mCardForm.isValid()) {
+                    mCardForm.validate();
+                }
 
-                if(firstName.getError()== null && lastName.getError()==null
+                if(mCardForm.isValid() && firstName.getError()== null && lastName.getError()==null
                         && phone.getError()==null && password.getError()==null && cPassword.getError()==null) {
                     Toast.makeText(CreditCardWelcomeActivity.this,"You have successfully registered a credit card ",Toast.LENGTH_LONG).show();
                     Intent MainIntent = new Intent(CreditCardWelcomeActivity.this, MainActivity.class);
