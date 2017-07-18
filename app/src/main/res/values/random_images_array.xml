@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="teams">
+        <item>@drawable/ic_boston_celtics</item>
+        <item>@drawable/ic_buffalo_bills_logo</item>
+        <item>@drawable/ic_chicago_cubs_logo</item>
+        <item>@drawable/ic_cleveland_browns_logo</item>
+        <item>@drawable/ic_denver_broncos_logo</item>
+        <item>@drawable/ic_miami_dolphins_logo</item>
+        <item>@drawable/ic_oakland_raiders</item>
+        <item>@drawable/ic_ottawa_senators</item>
+        <item>@drawable/ic_oakland_raiders_t</item>
+        <item></item>
+    </array>
+
+</resources>
