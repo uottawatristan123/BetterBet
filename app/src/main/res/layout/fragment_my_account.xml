@@ -13,23 +13,27 @@
         android:layout_marginTop="25dp"
         android:text="My Account"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp" />
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="435dp">
 
         <ExpandableListView
             android:id="@+id/expListView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="true" />
     </FrameLayout>
 
     <Button
         android:id="@+id/changePass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:text="Change Password"
         android:textColor="@android:color/background_light" />
 
@@ -37,7 +41,7 @@
         android:id="@+id/deactivateAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_dark"
+        android:background="#cfcc0000"
         android:text="Deactivate Account"
         android:textColor="@color/cardview_light_background" />
 
