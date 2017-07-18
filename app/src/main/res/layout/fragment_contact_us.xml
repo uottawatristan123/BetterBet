@@ -12,22 +12,19 @@
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:text="Contact Us"
-        android:textAppearance="@android:style/TextAppearance.Material.Large" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:paddingEnd="50dp"
-        android:paddingRight="50dp" />
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:paddingBottom="5dp"
         android:paddingLeft="15dp"
         android:paddingTop="10dp"
