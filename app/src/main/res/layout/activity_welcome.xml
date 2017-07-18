@@ -53,11 +53,13 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="25dp"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:elevation="0dp"
             android:paddingLeft="50dp"
             android:paddingRight="50dp"
             android:text="Add Credit Card"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background" />
     </RelativeLayout>
 
     <TextView
