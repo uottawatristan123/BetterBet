@@ -46,7 +46,7 @@
             android:fontFamily="sans-serif"
             android:paddingLeft="0dp"
             android:paddingRight="50dp"
-            android:text="RadioButton"
+            android:text="Cleveland "
             android:textAlignment="center"
             android:textSize="18sp"
             app:buttonTint="@android:color/holo_orange_dark" />
@@ -59,7 +59,7 @@
             android:fontFamily="sans-serif"
             android:paddingLeft="0dp"
             android:paddingRight="50dp"
-            android:text="RadioButton"
+            android:text="Miami"
             android:textAlignment="center"
             android:textSize="18sp"
             app:buttonTint="@android:color/holo_orange_dark" />

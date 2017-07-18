@@ -10,7 +10,8 @@
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <ImageView
@@ -38,7 +39,7 @@
             android:layout_weight="1"
             android:paddingTop="20dp"
             android:text="Under Construction"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
     </LinearLayout>
 

@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 /**
@@ -74,6 +76,9 @@ public class HomeFragment extends Fragment {
                 dialog.setContentView(R.layout.quick_bet_dialog);
 
                 Button close = (Button)dialog.findViewById(R.id.close);
+                Button confirm = (Button)dialog.findViewById(R.id.betButton);
+                final TextInputLayout amountToBet = (TextInputLayout)dialog.findViewById(R.id.amountToBet);
+                final EditText betAmount = (EditText)dialog.findViewById(R.id.bet_amount);
                 dialog.setTitle("Quick Bet");
 
                 close.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +89,21 @@ public class HomeFragment extends Fragment {
             }
 
         });
+                confirm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (betAmount.getText().toString().isEmpty()   ){
+                            amountToBet.setError("You must enter an amount to bet.");
+                        }
+                        else if ( betAmount.getText().toString().equals("0")){
+                            amountToBet.setError("You must bet higher than zero !");
+                        }
+                        else{
+                            Toast.makeText(getContext(),"Your bet of $"+betAmount.getText().toString()+ " has been placed.",Toast.LENGTH_LONG ).show();
+                            dialog.dismiss();
+                        }
+                    }
+                });
                 dialog.show();
             }
         });
